@@ -482,7 +482,7 @@ body {
 }
 
 .input-group:focus-within .input-label {
-    color: var(--red-primary);
+    color: var(--white);
 }
 
 .input-wrapper {
@@ -503,7 +503,7 @@ body {
 }
 
 .input-group:focus-within .input-icon {
-    color: var(--red-primary);
+    color: var(--white);
 }
 
 .input-wrapper input {
@@ -528,9 +528,9 @@ body {
 }
 
 .input-wrapper input:focus {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--red-primary);
-    box-shadow: 0 0 0 3px rgba(163, 11, 11, 0.15), 0 4px 16px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1), 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .input-wrapper input:hover:not(:focus) {
@@ -538,23 +538,7 @@ body {
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* Focus border animation */
-.input-focus-border {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--red-primary), var(--red-light));
-    border-radius: 1px;
-    transition: all var(--transition-smooth);
-    transform: translateX(-50%);
-    z-index: 3;
-}
 
-.input-group:focus-within .input-focus-border {
-    width: calc(100% - 28px);
-}
 
 
 /* --- Password Toggle --- */
